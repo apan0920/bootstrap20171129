@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>栅格系统</title>
+	
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<!-- <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/docs.css">  -->
+	<style>
+		/* // Usage as a mixin */
+		.heading {
+		  .text-hide();
+		}		
+	</style>
+</head>
+	
+<body>
+	<div class="container">
+		<form >
+		  <fieldset disabled>
+		    <legend>健康信息</legend>
+		    身高：<input type="text" />
+		    体重：<input type="text" />
+		  </fieldset>
+		  <p>如果表单周围没有边框，说明您的浏览器太老了。（此处是被bootstrap重置了样式）</p>
+		  <div class="form-group has-success has-feedback">
+			  <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
+			  <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
+			  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+			  <span id="inputSuccess5Status" class="sr-only">(success)</span>
+			</div>
+			<div class="form-group has-success has-feedback">
+			  <label class="control-label sr-only" for="inputGroupSuccess4">Input group with success</label>
+			  <div class="input-group">
+			    <span class="input-group-addon">@</span>
+			    <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
+			  </div>
+			  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+			  <span id="inputGroupSuccess4Status" class="sr-only">(success)</span>
+			</div>
+
+	   </form>
+
+		<form >
+			<div class="form-group">
+				<input class="form-control input-lg" type="text" placeholder=".input-lg">
+				<input class="form-control" type="text" placeholder="Default input">
+				<input class="form-control input-sm" type="text" placeholder=".input-sm">
+
+				<select class="form-control input-lg">...</select>
+				<select class="form-control">...</select>
+				<select class="form-control input-sm">...</select>
+			</div>
+		</form>
+
+	   <form class="form-horizontal">
+		  <div class="form-group form-group-lg">
+		    <label class="col-sm-2 control-label" for="formGroupInputLarge">Large label</label>
+		    <div class="col-sm-10">
+		      <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
+		    </div>
+		  </div>
+		  <div class="form-group form-group-sm">
+		    <label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
+		    <div class="col-sm-10">
+		      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+		    </div>
+		  </div>
+		</form>
+	</div>
+
+	<a class="btn btn-default" href="#" role="button">Link</a>
+	<button class="btn btn-default" type="submit">Button</button>
+	<input class="btn btn-default" type="button" value="Input">
+	<input class="btn btn-default" type="submit" value="Submit">
+
+	<!-- Standard button -->
+	<button type="button" class="btn btn-default">（默认样式）Default</button>
+
+	<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+	<button type="button" class="btn btn-primary">（首选项）Primary</button>
+
+	<!-- Indicates a successful or positive action -->
+	<button type="button" class="btn btn-success">（成功）Success</button>
+
+	<!-- Contextual button for informational alert messages -->
+	<button type="button" class="btn btn-info">（一般信息）Info</button>
+
+	<!-- Indicates caution should be taken with this action -->
+	<button type="button" class="btn btn-warning">（警告）Warning</button>
+
+	<!-- Indicates a dangerous or potentially negative action -->
+	<button type="button" class="btn btn-danger">（危险）Danger</button>
+
+	<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+	<button type="button" class="btn btn-link">（链接）Link</button>
+
+	<button type="button" class="btn btn-primary btn-lg btn-block active">Primary button</button>
+	<button type="button" class="btn btn-default btn-lg active">Button</button>
+
+	<div style="width: 100%;background-color: pink;">
+		<img class="img-responsive img-circle center-block visible-lg-block" src="./images/dd.jpg" alt="">
+	</div>
+	<div class="bg-success">
+		<p >古道西风瘦马</p>
+	</div>
+	
+	<p class="bg-success">断肠人在天涯</p>
+	<p class="bg-info">夕阳西下</p>
+	<p class="bg-warning">小桥流水人家</p>
+	<p class="bg-danger">昨日黄花</p>
+
+	<p class="text-muted">偷得浮生半日闲</p>
+	<p class="text-primary">偷得浮生半日闲</p>
+	<p class="text-success">偷得浮生半日闲</p>
+	<p class="text-info">偷得浮生半日闲.</p>
+	<p class="text-warning">偷得浮生半日闲</p>
+	<p class="text-danger">偷得浮生半日闲</p>
+
+	<button class="close" type="button" aira-hidden="close"><span aira-hidden="true">&times;</span></button>
+	<br>
+	<h1 class="text-hide" style="background-color: red;">Custom headingCustom headingCustom headingCustom heading</h1>
+</body>
+</html>
